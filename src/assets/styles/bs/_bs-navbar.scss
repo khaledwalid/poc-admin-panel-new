@@ -1,0 +1,30 @@
+.navbar {
+    --#{$prefix}navbar-padding-y: 0;
+    --#{$prefix}navbar-color: #666666;
+    --#{$prefix}navbar-nav-link-padding-x: #{0.75*$spacer};
+
+    --#{$prefix}navbar-toggler-padding-x: #{.625*$spacer};
+    --#{$prefix}navbar-toggler-padding-y: #{.625*$spacer};
+    --#{$prefix}navbar-toggler-font-size: #{.75*$spacer};
+    --#{$prefix}navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23707070' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
+.navbar-nav {
+    padding-inline-start: 0;
+
+    .nav-link {
+        &.active {
+            color: $primary;
+            font-weight: $font-weight-bold;
+        }
+    }
+}
+
+.nav-link {
+    --#{$prefix}nav-link-padding-y: 0;
+    --#{$prefix}nav-link-font-size: #{$font-size-sm};
+}
+
+.navbar-toggler {
+    background-color: rgba(#9C9C9C1A, .1)
+}

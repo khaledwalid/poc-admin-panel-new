@@ -1,0 +1,9 @@
+[class^="fa-"] {
+
+    &[class$="-right"],
+    &[class$="-left"] {
+        [dir="rtl"] & {
+            transform: scaleX(-1);
+        }
+    }
+}

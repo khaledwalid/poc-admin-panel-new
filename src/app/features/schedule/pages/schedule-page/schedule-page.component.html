@@ -1,0 +1,15 @@
+@if (events) {
+  <div class="px-4 py-3 rounded-2 bg-white h-100">
+    <app-calendar></app-calendar>
+
+    <div class="row justify-content-center g-0 mt-3">
+      <div class="col-xl-4">
+        <button class="btn btn-lg btn-primary py-3 w-100" (click)="createSchedule(true)">Add new schedule</button>
+      </div>
+    </div>
+  </div>
+} @else {
+  <div class="d-flex flex-column align-items-center justify-content-center h-100">
+    <app-no-data (buttonClicked)="createSchedule($event)"></app-no-data>
+  </div>
+}

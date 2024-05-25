@@ -1,0 +1,67 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    "border-start": map-merge(
+      map-get($utilities, "border-start"),
+      ( property: border-inline-start ),
+    ),
+    "border-end": map-merge(
+      map-get($utilities, "border-end"),
+      ( property: border-inline-end ),
+    ),
+
+    "margin-end": map-merge(
+      map-get($utilities, "margin-end"),
+      ( property: margin-inline-end ),
+    ),
+    "margin-start": map-merge(
+      map-get($utilities, "margin-start"),
+      ( property: margin-inline-start ),
+    ),
+    "negative-margin-end": map-merge(
+      map-get($utilities, "negative-margin-end"),
+      ( property: margin-inline-end ),
+    ),
+    "negative-margin-start": map-merge(
+      map-get($utilities, "negative-margin-start"),
+      ( property: margin-inline-start ),
+    ),
+
+    "padding-end": map-merge(
+      map-get($utilities, "padding-end"),
+      ( property: padding-inline-end ),
+    ),
+    "padding-start": map-merge(
+      map-get($utilities, "padding-start"),
+      ( property: padding-inline-start ),
+    ),
+
+    
+    "rounded-end": map-merge(
+      map-get($utilities, "rounded-end"),
+      ( property: border-start-end-radius border-end-end-radius ),
+    ),
+    "rounded-start": map-merge(
+      map-get($utilities, "border-start"),
+      ( property: border-end-start-radius border-start-start-radius ),
+    ),
+
+    
+    "text-align": map-merge(
+      map-get($utilities, "text-align"),
+      ( values: (
+        start: start,
+        end: end,
+        center: center
+        )
+      ),
+    ),
+
+    "cursor": (
+      property: cursor,
+      class: cursor,
+      responsive: false,
+      values: auto pointer grab,
+    )
+  )
+);

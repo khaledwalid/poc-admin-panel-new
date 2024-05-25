@@ -1,0 +1,31 @@
+.required {
+    .form-label {
+        position: relative;
+
+        &::after {
+            content: '*';
+            position: absolute;
+            top: 0;
+            inset-inline-end: (100% + .5$spacer);
+            color: $primary;
+        }
+    }
+}
+
+.form-control-sm {
+    &::placeholder {
+        font-size: $font-size-xs;
+    }
+}
+
+.form-control {
+    &::placeholder {
+        font-size: $font-size-sm;
+    }
+}
+
+.form-control-lg {
+    &::placeholder {
+        font-size: $font-size-base;
+    }
+}

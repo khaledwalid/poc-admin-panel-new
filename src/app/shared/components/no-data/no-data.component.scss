@@ -1,0 +1,11 @@
+@import "bootstrap/scss/functions";
+@import "assets/styles/bs/bs-variables";
+@import "bootstrap/scss/variables";
+
+.text {
+  color: #203B54;
+}
+
+.btn {
+  font-weight: $font-weight-semibold;
+}

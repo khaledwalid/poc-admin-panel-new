@@ -1,0 +1,13 @@
+.modal {
+  --bs-modal-border-radius: #{1.5*$border-radius-xl};
+}
+
+.modal-header {
+  position: relative;
+
+  .btn-close {
+    position: absolute;
+    top: $spacer;
+    inset-inline-start: $spacer;
+  }
+}

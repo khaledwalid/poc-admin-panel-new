@@ -1,0 +1,63 @@
+@import "assets/styles/bs/bs-variables";
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "assets/styles/variables";
+
+section {
+    &.home-section {
+        position: relative;
+        padding-block: 3*$spacer;
+
+        @media screen and (min-width:1200px) {
+            padding-block: 6*$spacer;
+        }
+
+        .section-logo {
+            position: absolute;
+            z-index: 2;
+            top: -.75*$spacer;
+            right: 50%;
+            transform: translateX(50%);
+
+            @media screen and (min-width:1200px) {
+                top: -1.5*$spacer;
+            }
+
+            img {
+                width: 6*$spacer;
+
+                @media screen and (min-width:1200px) {
+                    width: 9.5*$spacer;
+                }
+            }
+        }
+
+        .section-header {
+            .title {
+                position: relative;
+                font-size: 1.5*$font-size-base;
+
+                @media screen and (min-width:1200px) {
+                    font-size: 2.25*$font-size-base;
+                }
+
+                &.lined {
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 100%;
+                        right: auto;
+                        inset-inline-start: 0;
+                        transform: translateX(0);
+
+                        width: 5.625*$spacer;
+                        height: .3125*$spacer;
+                        border-radius: $border-radius-lg;
+
+                        background-color: $primary;
+                    }
+                }
+            }
+        }
+    }
+}

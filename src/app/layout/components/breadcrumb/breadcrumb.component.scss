@@ -1,0 +1,13 @@
+@import "bootstrap/scss/functions";
+@import "assets/styles/bs/bs-variables";
+@import "bootstrap/scss/variables";
+@import "assets/styles/variables";
+
+.breadcrumb {
+  --bs-breadcrumb-divider-color: #{$gray-600};
+  --bs-breadcrumb-item-active-color: #{$gray-600};
+}
+
+.nav-breadcrumb {
+  padding: $spacer $grid-gutter-width;
+}

@@ -1,0 +1,138 @@
+:root {
+  --fc-today-bg-color: inherit;
+}
+
+.fc {
+  .fc-view {
+    &.fc-timeGridWeek-view {
+
+      .fc-col-header-cell {
+        .fc-scrollgrid-sync-inner {
+          text-align: center;
+
+          .fc-col-header-cell-cushion {
+            width: 4.5*$spacer;
+          }
+        }
+
+        &.fc-day-today {
+          .fc-col-header-cell-cushion {
+            color: $green;
+          }
+        }
+      }
+
+    }
+  }
+
+  .fc-timegrid-slot {
+    border-inline: none;
+  }
+
+  .fc-col-header-cell,
+  .fc-day {
+    width: 7*$spacer;
+  }
+
+  .fc-timegrid-axis-frame {
+    justify-content: flex-start;
+  }
+
+  .fc-timegrid-axis-cushion,
+  .fc-timegrid-slot-label-cushion {
+    padding: 0;
+  }
+}
+
+.fc-theme-bootstrap5 .fc-list,
+.fc-theme-bootstrap5 .fc-scrollgrid,
+.fc-theme-bootstrap5 td,
+.fc-theme-bootstrap5 th {
+  border-inline-width: 0;
+  border-color: var(--#{$prefix}gray-200);
+
+  &.fc-day {
+    border-inline-start-width: 1px;
+  }
+}
+
+.fc-theme-bootstrap5 .fc-scrollgrid,
+.fc-theme-bootstrap5 th {
+  border: none;
+}
+
+.fc-col-header-cell {
+  padding-block: 1.25*$spacer !important;
+  background-color: var(--#{$prefix}gray-200);
+}
+
+.fc-v-event {
+  padding: .5*$spacer;
+  border: 1px solid;
+  border-inline-start-width: 3px;
+  border-start-end-radius: $border-radius-lg;
+  border-end-end-radius: $border-radius-lg;
+
+  .fc-event-main-frame {
+    font-weight: $font-weight-medium;
+
+    .fc-event-title-container {
+      flex-grow: 0;
+      order: 1;
+    }
+
+    .fc-event-time {
+      order: 2;
+    }
+  }
+
+  .fc-event-time {
+    color: $dark;
+  }
+
+  &.event-default {
+    border-color: $blue-400;
+    background-color: $light-blue;
+
+    .fc-event-title {
+      color: $white;
+    }
+  }
+
+  &.event-purple {
+    border-color: $purple;
+    background-color: $lighter-purple;
+
+    .fc-event-title {
+      color: $purple;
+    }
+  }
+
+  &.event-green {
+    border-color: $green;
+    background-color: $white;
+
+    .fc-event-title {
+      color: $green;
+    }
+  }
+
+  &.event-blue {
+    border-color: $blue-400;
+    background-color: $lighter-blue;
+
+    .fc-event-title {
+      color: $blue-400;
+    }
+  }
+
+  &.event-orange {
+    border-color: $orange;
+    background-color: rgba($orange, .1);
+    background-color: $lighter-orange;
+
+    .fc-event-title {
+      color: $orange;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.curser-pointer {
+    cursor: pointer;
+}
+
+.btn-primary-grad {
+    background-image: linear-gradient(180deg, #72A240 0%, #176A41 100%);
+
+    &:hover {
+        background-image: none;
+    }
+}

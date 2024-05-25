@@ -1,0 +1,29 @@
+<div class="logo px-3 py-4 border-bottom">
+  <img src="/assets/images/general/logo.svg" class="img-fluid" alt="">
+</div>
+
+<div class="nav-menu py-4">
+  <div class="profile px-3 py-2 bg-white bg-opacity-10">
+    <div class="d-flex align-items-center column-gap-2">
+      <div class="image">
+        <img src="/assets/images/general/profile.png" alt="{{'Profile Image'}}">
+      </div>
+      <h6 class="name fw-medium text-white">{{'Sarah Ibrahim Ahmed Al-Jarhi' | slice:0:23}}...</h6>
+    </div>
+  </div>
+
+  <ul class="nav flex-column mt-4 px-3">
+    <li class="nav-item flex-fill px-3 py-2 rounded-2 bg-white bg-opacity-10" routerLinkActive="active">
+      <a [routerLink]="['/home']" class="navlink text-white"><i class="iconsax" icon-name="home-1"></i> {{'Home'}}</a>
+    </li>
+    <li class="nav-item flex-fill px-3 py-2 rounded-2 bg-white bg-opacity-10" routerLinkActive="active">
+      <a [routerLink]="['/schedule']" class="navlink text-white"><i class="iconsax" icon-name="book-open"></i> {{'Lecture Schedule'}}</a>
+    </li>
+    <li class="nav-item flex-fill px-3 py-2 rounded-2 bg-white bg-opacity-10" routerLinkActive="active">
+      <a [routerLink]="['/profile']" class="navlink text-white"><i class="iconsax" icon-name="users"></i> {{'Personal Profile'}}</a>
+    </li>
+    <li class="nav-item flex-fill px-3 py-2 rounded-2 bg-white bg-opacity-10" routerLinkActive="active">
+      <a [routerLink]="['/settings']" class="navlink text-white"><i class="iconsax" icon-name="nut"></i> {{'Settings'}}</a>
+    </li>
+  </ul>
+</div>

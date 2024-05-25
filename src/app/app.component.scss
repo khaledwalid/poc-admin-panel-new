@@ -1,0 +1,32 @@
+@import "bootstrap/scss/functions";
+@import "assets/styles/bs/bs-variables";
+@import "bootstrap/scss/variables";
+
+.page-layout {
+  min-height: 100vh;
+  background-color: rgba($blue-600, .9);
+  overflow: hidden;
+
+  .side {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      inset-block: 0;
+      width: 110%;
+      background-image: linear-gradient(80.18deg, rgba($blue, 0.9) 58.22%, rgba($blue-600, 0.9) 118.85%);
+    }
+  }
+
+  .page {
+    padding: $spacer 2*$spacer;
+
+    border-start-start-radius: 2*$spacer;
+    border-end-start-radius: 2*$spacer;
+
+    background-color: $gray-100;
+    box-shadow: 5px 4px 25px 0px rgba($black, .08);
+  }
+}

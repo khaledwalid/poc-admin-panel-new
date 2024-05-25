@@ -1,0 +1,29 @@
+@import "bootstrap/scss/functions";
+@import "assets/styles/bs/bs-variables";
+@import "bootstrap/scss/variables";
+@import "assets/styles/variables";
+
+.logo {
+  border-color: $gray-100;
+}
+
+.profile {
+  .image {
+    width: 2.5*$spacer;
+    height: 2.5*$spacer;
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+      max-width: 150%;
+    }
+  }
+}
+
+.nav {
+  .nav-item {
+    &:not(.active) {
+      background-color: transparent !important;
+    }
+  }
+}

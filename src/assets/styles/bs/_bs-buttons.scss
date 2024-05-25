@@ -1,0 +1,52 @@
+.btn {
+  --#{$prefix}btn-padding-x: #{.5*$spacer};
+  --#{$prefix}btn-font-size: #{.875*$font-size-base};
+}
+
+.btn-lg {
+  --#{$prefix}btn-padding-x: #{2*$spacer};
+  --#{$prefix}btn-padding-y: #{$spacer};
+  --#{$prefix}btn-font-size: #{$font-size-base};
+}
+
+.btn-sm {
+  --#{$prefix}btn-font-size: #{.75*$font-size-base};
+}
+
+.btn-default {
+  --#{$prefix}btn-color: #{$green-600};
+  --#{$prefix}btn-bg: #{$white};
+  --#{$prefix}btn-border-color: #{$gray-200};
+
+  --#{$prefix}btn-hover-border-color: #{$green-600};
+}
+
+.btn-primary {
+  --#{$prefix}btn-color: #{$white};
+  --#{$prefix}btn-hover-color: #{$white};
+  --#{$prefix}btn-disabled-color: #{$white};
+}
+
+.btn-light {
+  --#{$prefix}btn-color: #{$primary};
+  --#{$prefix}btn-border-color: #{rgba($primary, .1)};
+  --#{$prefix}btn-bg: #{rgba($primary, .1)};
+
+  --#{$prefix}btn-hover-color: #{$primary};
+  --#{$prefix}btn-hover-border-color: #{rgba($primary, .2)};
+  --#{$prefix}btn-hover-bg: #{rgba($primary, .2)};
+}
+
+.btn-outline-primary {
+  --#{$prefix}btn-hover-color: #{$white};
+}
+
+.btn-outline-warning {
+  --#{$prefix}btn-hover-color: #{$white};
+}
+
+.btn-link {
+  --#{$prefix}btn-color: #{$primary};
+
+  --#{$prefix}btn-hover-color: #{$green};
+}

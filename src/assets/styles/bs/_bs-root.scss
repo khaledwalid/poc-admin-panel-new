@@ -1,0 +1,7 @@
+:root {
+  --#{$prefix}body-font-family: "Vazirmatn", sans-serif;
+
+  &:dir(rtl) {
+    --#{$prefix}body-font-family: "Readex_Pro", sans-serif;
+  }
+}

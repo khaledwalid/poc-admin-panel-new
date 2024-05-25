@@ -1,0 +1,26 @@
+<div class="modal-header justify-content-center pt-4 border-bottom-0">
+  <button type="button" class="btn-close close ms-0 me-auto" aria-label="Close" (click)="close('create-schedule')">
+    <span aria-hidden="true" class="visually-hidden">&times;</span>
+  </button>
+  <h6 class="modal-title">{{ title }}</h6>
+</div>
+<div class="modal-body py-4">
+  <form>
+    <div class="mb-4" *ngIf="semesters$ | async as semesters">
+      <label for="select" class="form-label">Choose semester</label>
+      <select name='selectedSemester' id="select" class="form-select" [(ngModel)]="selectedSemester"
+              (ngModelChange)="onChange($event)">
+        <option selected disabled>choose your semester</option>
+        <ng-container *ngFor="let semester of semesters">
+          <option [value]="semester.id">{{ semester.name }}</option>
+        </ng-container>
+      </select>
+    </div>
+
+    <div class="cta d-flex justify-content-end column-gap-2">
+      <button type="button" class="btn btn-lg btn-outline-danger" (click)="close('create-schedule')">Cancel</button>
+      <button [disabled]="!selectedSemester" type="button" class="btn btn-lg btn-primary" (click)="generate()">Generate
+      </button>
+    </div>
+  </form>
+</div>
